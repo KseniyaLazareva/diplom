@@ -1,6 +1,6 @@
 # Дипломный проект по профессии «Тестировщик»
 ## Документы
-* [План атоматизации](https://github.com/KseniyaLazareva/diplom/blob/main/Plan.md)
+* [План автоматизации](https://github.com/KseniyaLazareva/diplom/blob/main/Plan.md)
 * [Отчет по итогам автоматизации](https://github.com/KseniyaLazareva/diplom/blob/main/Summary.md)
 * [Отчет по итогам тестирования](https://github.com/KseniyaLazareva/diplom/blob/main/Report.md)
 
