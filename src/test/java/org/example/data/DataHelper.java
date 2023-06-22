@@ -5,10 +5,9 @@ import lombok.Value;
 import static com.codeborne.selenide.Selenide.open;
 
 public class DataHelper {
-    //public static String expectedPaymentStatusApproved = "APPROVED";
-    //public static String expectedPaymentStatusDeclined = "DECLINED";
 
     public static void openPage() {
+
         open("http://localhost:8080");
     }
 
@@ -20,10 +19,12 @@ public class DataHelper {
     }
 
     public static String getCardNumber1() {
+
         return new CardInfo().card1;
     }
 
     public static String getCardNumber2() {
+
         return new CardInfo().card2;
     }
 }

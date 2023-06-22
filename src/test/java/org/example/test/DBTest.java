@@ -20,9 +20,13 @@ public class DBTest {
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
+    @BeforeEach
+    void openPage() {
+        DataHelper.openPage();
+    }
+
     @AfterEach
     void clearTable() {
-
         DBHelper.cleanDatabase();
     }
 
@@ -31,10 +35,7 @@ public class DBTest {
         SelenideLogger.removeListener("allure");
     }
 
-    @BeforeEach
-    void openPage() {
-        DataHelper.openPage();
-    }
+
 
     MainPage mainPage = new MainPage();
 

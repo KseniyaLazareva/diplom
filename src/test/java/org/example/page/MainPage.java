@@ -31,14 +31,14 @@ public class MainPage {
         continueButton.click();
     }
 
-    private ElementsCollection fields = $$(".input__control");
-    private SelenideElement inputCardNumber = $("[placeholder=\"0000 0000 0000 0000\"]");
-    private SelenideElement inputMonth = $("[placeholder=\"08\"]");
-    private SelenideElement inputYear = $("[placeholder=\"22\"]");
-    private SelenideElement inputOwner = fields.get(3);
-    private SelenideElement inputCVV = $("[placeholder=\"999\"]");
-    private SelenideElement errorNotification = $(".notification_status_error .icon_name_close");
-    private SelenideElement successNotification = $(".notification_status_ok");
+    private final ElementsCollection fields = $$(".input__control");
+    private final SelenideElement inputCardNumber = $("[placeholder=\"0000 0000 0000 0000\"]");
+    private final SelenideElement inputMonth = $("[placeholder=\"08\"]");
+    private final SelenideElement inputYear = $("[placeholder=\"22\"]");
+    private final SelenideElement inputOwner = fields.get(3);
+    private final SelenideElement inputCVV = $("[placeholder=\"999\"]");
+    private final SelenideElement errorNotification = $(".notification_status_error .icon_name_close");
+    private final SelenideElement successNotification = $(".notification_status_ok");
 
     public void findSuccessNotification() {
         $(byText("Операция одобрена Банком.")).shouldBe(Condition.visible, Duration.ofSeconds(15));
